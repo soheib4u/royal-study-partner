@@ -40,7 +40,11 @@ const mockSubjects: Subject[] = [
   }
 ];
 
-export function Subjects() {
+interface SubjectsProps {
+  onNavigateToSubject: (id: string) => void;
+}
+
+export function Subjects({ onNavigateToSubject }: SubjectsProps) {
   return (
     <div className="pb-20 px-4 space-y-6">
       <div className="flex items-center justify-between mb-6">
@@ -53,7 +57,11 @@ export function Subjects() {
 
       <div className="grid gap-4">
         {mockSubjects.map((subject) => (
-          <div key={subject.id} className="luxury-card p-4 animate-scale-in">
+          <div 
+            key={subject.id} 
+            onClick={() => onNavigateToSubject(subject.id)}
+            className="luxury-card p-4 animate-scale-in cursor-pointer hover:scale-105 transition-all"
+          >
             <div className="flex items-center gap-4">
               <div className={`w-12 h-12 ${subject.color} rounded-xl flex items-center justify-center`}>
                 <BookOpen className="w-6 h-6 text-white" />

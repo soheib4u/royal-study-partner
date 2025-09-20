@@ -4,9 +4,10 @@ import { Button } from "@/components/ui/button";
 interface StudentMateHeaderProps {
   userName?: string;
   currentGPA?: number;
+  onNavigateToProfile?: () => void;
 }
 
-export function StudentMateHeader({ userName = "Student", currentGPA }: StudentMateHeaderProps) {
+export function StudentMateHeader({ userName = "Student", currentGPA, onNavigateToProfile }: StudentMateHeaderProps) {
   return (
     <header className="luxury-card p-4 mb-6 animate-fade-in">
       <div className="flex items-center justify-between">
@@ -22,7 +23,12 @@ export function StudentMateHeader({ userName = "Student", currentGPA }: StudentM
           </div>
         </div>
         
-        <Button variant="ghost" size="icon" className="text-muted-foreground hover:text-foreground">
+        <Button 
+          variant="ghost" 
+          size="icon" 
+          className="text-muted-foreground hover:text-foreground"
+          onClick={onNavigateToProfile}
+        >
           <Settings className="w-5 h-5" />
         </Button>
       </div>
