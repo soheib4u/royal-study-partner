@@ -1,12 +1,34 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import { useState } from "react";
+import { Dashboard } from "./Dashboard";
+import { Subjects } from "./Subjects";
+import { BottomNavigation } from "@/components/BottomNavigation";
 
 const Index = () => {
+  const [activeTab, setActiveTab] = useState('dashboard');
+
+  const renderContent = () => {
+    switch (activeTab) {
+      case 'dashboard':
+        return <Dashboard />;
+      case 'subjects':
+        return <Subjects />;
+      case 'schedule':
+        return <div className="pb-20 px-4"><h1 className="text-2xl font-bold mb-4">Schedule</h1><p className="text-muted-foreground">Coming soon...</p></div>;
+      case 'tasks':
+        return <div className="pb-20 px-4"><h1 className="text-2xl font-bold mb-4">Tasks</h1><p className="text-muted-foreground">Coming soon...</p></div>;
+      case 'progress':
+        return <div className="pb-20 px-4"><h1 className="text-2xl font-bold mb-4">Progress</h1><p className="text-muted-foreground">Coming soon...</p></div>;
+      default:
+        return <Dashboard />;
+    }
+  };
+
   return (
-    <div className="flex min-h-screen items-center justify-center bg-background">
-      <div className="text-center">
-        <h1 className="mb-4 text-4xl font-bold">Welcome to Your Blank App</h1>
-        <p className="text-xl text-muted-foreground">Start building your amazing project here!</p>
+    <div className="min-h-screen bg-background">
+      <div className="pt-safe-area-top">
+        {renderContent()}
       </div>
+      <BottomNavigation activeTab={activeTab} onTabChange={setActiveTab} />
     </div>
   );
 };
