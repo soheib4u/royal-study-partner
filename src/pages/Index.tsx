@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useTranslation } from "react-i18next";
 import { Dashboard } from "./Dashboard";
 import { Subjects } from "./Subjects";
 import { Schedule } from "./Schedule";
@@ -43,9 +44,12 @@ const Index = () => {
     }
   };
 
+  const { t } = useTranslation();
   return (
     <div className="min-h-screen bg-background">
       <div className="pt-safe-area-top">
+        {/* Example translated welcome message */}
+        <h1 className="text-center text-2xl font-bold mb-4">{t('welcome')}</h1>
         {renderContent()}
       </div>
       <BottomNavigation activeTab={activeTab} onTabChange={setActiveTab} />

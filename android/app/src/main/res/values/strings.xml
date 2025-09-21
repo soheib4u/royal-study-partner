@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">StudentMate</string>
+    <string name="title_activity_main">StudentMate</string>
+    <string name="package_name">app.lovable.fdf6bbd3a8fc4f75aec95e13dcd4ec9f</string>
+    <string name="custom_url_scheme">app.lovable.fdf6bbd3a8fc4f75aec95e13dcd4ec9f</string>
+</resources>

@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useTranslation } from "react-i18next";
 import { Plus } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { StudentMateHeader } from "@/components/StudentMateHeader";
@@ -17,25 +18,23 @@ interface DashboardProps {
 export function Dashboard({ onNavigateToProfile, onNavigateToProject }: DashboardProps) {
   const [showAddProject, setShowAddProject] = useState(false);
   const [projects] = useLocalStorage<Project[]>('studentmate-projects', []);
+  const { t } = useTranslation();
 
   return (
     <div className="pb-20 px-4 space-y-6">
       <StudentMateHeader userName="Alex Chen" currentGPA={3.85} onNavigateToProfile={onNavigateToProfile} />
-      
       <div className="grid gap-4">
         <TodaySchedule />
         <TasksDueSoon />
-        
         {/* Projects Section */}
         <div className="luxury-card p-4">
           <div className="flex items-center justify-between mb-4">
-            <h3 className="font-semibold text-foreground">Projects</h3>
+            <h3 className="font-semibold text-foreground">{t('projects')}</h3>
             <Button onClick={() => setShowAddProject(true)} className="luxury-button">
               <Plus className="w-4 h-4 mr-2" />
-              Add Project
+              {t('add_project')}
             </Button>
           </div>
-          
           {projects.length === 0 ? (
             <div className="text-center py-8">
               <Button onClick={() => setShowAddProject(true)} className="luxury-button rounded-xl py-6 px-8">
