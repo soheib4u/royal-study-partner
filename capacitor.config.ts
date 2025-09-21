@@ -1,6 +1,6 @@
 
 const config = {
-  
+  appId: 'com.student.app',
   appName: 'StudentMate',
   webDir: 'dist',
   server: {
