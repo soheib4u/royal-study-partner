@@ -17,7 +17,7 @@ export function ProfileEdit({ onBack }: ProfileEditProps) {
   const { toast } = useToast();
   const [profile, setProfile] = useLocalStorage<UserProfile>('studentmate-profile', {
     id: '1',
-    name: 'Alex Chen',
+    name: 'Soheib',
     email: '',
     year: '2024',
     classType: 'undergraduate',
