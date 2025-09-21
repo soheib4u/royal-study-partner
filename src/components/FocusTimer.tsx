@@ -18,7 +18,7 @@ export function FocusTimer() {
     } else if (timeLeft === 0) {
       setIsRunning(false);
       // Timer completed logic here
-    }
+    }  
 
     return () => clearInterval(interval);
   }, [isRunning, timeLeft]);

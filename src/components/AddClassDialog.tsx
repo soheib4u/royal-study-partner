@@ -12,7 +12,7 @@ interface AddClassDialogProps {
   open: boolean;
   onOpenChange: (open: boolean) => void;
   selectedDay: string;
-}
+}  
 
 const DAYS = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
 

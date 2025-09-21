@@ -20,7 +20,7 @@ export function SubjectHomework({ subjectId }: SubjectHomeworkProps) {
         return a.completed ? 1 : -1;
       }
       return new Date(a.dueDate).getTime() - new Date(b.dueDate).getTime();
-    });
+    });  
 
   const toggleTaskCompletion = (taskId: string) => {
     setTasks(prev => prev.map(task => 

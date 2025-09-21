@@ -1,4 +1,4 @@
-package app.lovable.fdf6bbd3a8fc4f75aec95e13dcd4ec9f;
+package studentmate;
 
 import com.getcapacitor.BridgeActivity;
 

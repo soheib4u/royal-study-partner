@@ -21,7 +21,7 @@ export function AddNoteDialog({ open, onOpenChange, subjectId }: AddNoteDialogPr
   const [formData, setFormData] = useState({
     title: '',
     content: ''
-  });
+  });  
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();

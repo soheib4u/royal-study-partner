@@ -20,7 +20,7 @@ export function SubjectNotes({ subjectId }: SubjectNotesProps) {
     .filter(note => note.title.toLowerCase().includes(searchTerm.toLowerCase()) || 
                    note.content.toLowerCase().includes(searchTerm.toLowerCase()))
     .sort((a, b) => new Date(b.updatedAt).getTime() - new Date(a.updatedAt).getTime());
-
+    
   return (
     <div className="space-y-4">
       <div className="flex gap-2">

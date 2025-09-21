@@ -11,7 +11,7 @@ import { SubjectDetail } from "./SubjectDetail";
 import { ProjectDetail } from "./ProjectDetail";
 import { BottomNavigation } from "@/components/BottomNavigation";
 
-const Index = () => {
+const Index = () => {  
   const [activeTab, setActiveTab] = useState('dashboard');
   const [currentView, setCurrentView] = useState<{
     type: 'main' | 'profile' | 'subject-detail' | 'project-detail';

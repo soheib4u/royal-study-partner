@@ -21,7 +21,7 @@ const TASK_TYPES = [
   { id: 'assignment', label: 'Assignment', icon: FileText, color: 'bg-purple-500' },
   { id: 'quiz', label: 'Quiz', icon: HelpCircle, color: 'bg-orange-500' },
   { id: 'other', label: 'Other', icon: MoreHorizontal, color: 'bg-gray-500' },
-];
+];  
 
 export function TaskCreationDialog({ open, onOpenChange }: TaskCreationDialogProps) {
   const { toast } = useToast();

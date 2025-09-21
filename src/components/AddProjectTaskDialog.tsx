@@ -19,7 +19,7 @@ export function AddProjectTaskDialog({ open, onOpenChange, project, onUpdateProj
   const { toast } = useToast();
   const [formData, setFormData] = useState({
     title: '',
-    description: '',
+     description: '',
     assignedTo: '',
     priority: 'medium' as const,
     dueDate: ''

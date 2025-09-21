@@ -25,7 +25,7 @@ export function Schedule() {
   const getSubjectName = (subjectId: string) => {
     const subject = subjects.find(s => s.id === subjectId);
     return subject?.name || 'Unknown Subject';
-  };
+  }; 
 
   return (
     <div className="pb-20 px-4 space-y-6 animate-fade-in">

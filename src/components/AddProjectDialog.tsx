@@ -21,7 +21,7 @@ export function AddProjectDialog({ open, onOpenChange }: AddProjectDialogProps) 
     title: '',
     description: '',
     deadline: ''
-  });
+  });  
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();

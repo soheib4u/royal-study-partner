@@ -22,7 +22,7 @@ export function Progress() {
     if (grades.length === 0) return 0;
     const totalPercentage = grades.reduce((sum, grade) => sum + (grade.score / grade.maxScore) * 100, 0);
     return (totalPercentage / grades.length / 100 * 4).toFixed(2);
-  };
+  };  
 
   const getRecentGrades = () => {
     return grades

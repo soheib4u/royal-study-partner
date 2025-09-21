@@ -22,7 +22,7 @@ export function ProfileEdit({ onBack }: ProfileEditProps) {
     year: '2024',
     classType: 'undergraduate',
     academicGoals: '',
-    currentGPA: 3.85
+    currentGPA: 3.85  
   });
 
   const [formData, setFormData] = useState(profile);

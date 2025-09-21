@@ -14,7 +14,7 @@ import { AddProjectDialog } from "@/components/AddProjectDialog";
 interface DashboardProps {
   onNavigateToProfile: () => void;
   onNavigateToProject: (id: string) => void;
-}
+}  
 
 export function Dashboard({ onNavigateToProfile, onNavigateToProject }: DashboardProps) {
   const [showAddProject, setShowAddProject] = useState(false);

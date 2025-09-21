@@ -23,7 +23,7 @@ export function SubjectDetail({ subjectId, onBack }: SubjectDetailProps) {
       </div>
     );
   }
-
+  
   return (
     <div className="pb-20 px-4 space-y-6 animate-slide-in-right">
       <div className="flex items-center gap-3 mb-6">

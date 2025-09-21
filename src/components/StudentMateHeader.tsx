@@ -15,7 +15,7 @@ export function StudentMateHeader({ onNavigateToProfile }: StudentMateHeaderProp
     classType: 'undergraduate',
     academicGoals: '',
     currentGPA: 0
-  });
+  });  
   return (
     <header className="luxury-card p-4 mb-6 animate-fade-in">
       <div className="flex items-center justify-between">

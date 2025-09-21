@@ -11,7 +11,7 @@ import { useToast } from "@/hooks/use-toast";
 interface AddGradeDialogProps {
   open: boolean;
   onOpenChange: (open: boolean) => void;
-}
+}  
 
 export function AddGradeDialog({ open, onOpenChange }: AddGradeDialogProps) {
   const { toast } = useToast();

@@ -24,7 +24,7 @@ export function Tasks() {
       case 'low': return 'text-green-400';
       default: return 'text-muted-foreground';
     }
-  };
+  };  
 
   const getTaskTypeColor = (type: string) => {
     switch (type) {

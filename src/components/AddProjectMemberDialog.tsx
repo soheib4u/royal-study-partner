@@ -19,7 +19,7 @@ export function AddProjectMemberDialog({ open, onOpenChange, project, onUpdatePr
     name: '',
     role: '',
     email: ''
-  });
+  });  
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();

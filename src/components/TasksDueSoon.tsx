@@ -19,7 +19,7 @@ const mockTasks: Task[] = [
     dueDate: "Tomorrow",
     priority: "high",
     completed: false
-  },
+  },  
   {
     id: "2",
     title: "Math Problem Set 5",

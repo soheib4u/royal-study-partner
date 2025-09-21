@@ -4,7 +4,7 @@
 
 /* StudentMate Design System - Premium Navy & Cream Theme */
 
-@layer base {
+@layer base {  
   :root {
     /* Royal Navy & Cream Color Palette */
     --background: 210 30% 8%;

@@ -21,7 +21,7 @@ export function BottomNavigation({ activeTab, onTabChange }: BottomNavigationPro
         {tabs.map((tab) => {
           const Icon = tab.icon;
           const isActive = activeTab === tab.id;
-          
+             
           return (
             <button
               key={tab.id}

@@ -25,7 +25,7 @@ export function Subjects({ onNavigateToSubject }: SubjectsProps) {
       {
         id: uuidv4(),
         ...newSubject
-      }
+      }  
     ]);
     setShowAdd(false);
     setNewSubject({ name: '', color: 'bg-blue-500', teacher: '', nextClass: '' });

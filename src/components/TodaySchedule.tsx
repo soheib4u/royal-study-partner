@@ -23,7 +23,7 @@ const mockClasses: ClassSession[] = [
     time: "14:00 - 16:00",
     location: "Lab B",
     professor: "Prof. Johnson"
-  }
+  }  
 ];
 
 export function TodaySchedule() {

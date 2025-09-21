@@ -23,7 +23,7 @@ export function ProjectDetail({ projectId, onBack }: ProjectDetailProps) {
   const project = projects.find(p => p.id === projectId);
 
   if (!project) {
-    return (
+    return (  
       <div className="pb-20 px-4">
         <p>Project not found</p>
       </div>
